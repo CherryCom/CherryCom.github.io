@@ -48,13 +48,16 @@ nav li {
     align-items: center;
     justify-content: center;
     text-align: center; 
-    height: 20px;
-    border: #7f1f1f dotted 2px;
-    box-sizing: border-box;
 }
 nav a {
     display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
     color: #000000;
+    height: 20px;
+    border: #7f1f1f dotted 2px;
+    box-sizing: border-box;
     text-decoration: none;
 }
 nav a:hover {
@@ -130,6 +133,9 @@ body{
     }
     nav a {
         display: block;
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
         color: #000000;
         text-decoration: none;
     }
