@@ -1,9 +1,13 @@
 header{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
-    justify-content: center;
     height: 200px;
-    background-color: bisque;
+    background-color: rgb(231, 129, 61);
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+    font-size: 26;
+    align-items: center;
+    justify-content: center;
 }
 
 body{
