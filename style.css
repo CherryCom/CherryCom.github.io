@@ -19,7 +19,7 @@ html{
 
 header{
     margin: 0;
-    height: 150px;
+    height: 200px;
     background-color: rgb(231, 129, 61);
 
     font-family: 'Pacifico', cursive;
@@ -46,7 +46,7 @@ nav li {
     margin: 0;
     flex: 1;      
     text-align: center;  
-    height: 50px;
+    height: 20px;
     border: #7f1f1f dotted 2px;
     box-sizing: border-box;
 }
@@ -73,7 +73,7 @@ body{
 @media (max-width: 600px) {
 
     html{
-    background-color: red;    
+    background-color: blanchedalmond;    
     }
 
     .container {
