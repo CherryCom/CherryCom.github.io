@@ -75,7 +75,7 @@ body{
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
 
     html{
     background-color: blanchedalmond;    
@@ -130,14 +130,14 @@ body{
     }
     nav a {
         display: block;
-        align-items: center;
-        justify-content: center;
-        text-align: center; 
         color: #000000;
         height: 50px;
         border: #7f1f1f dotted 2px;
         box-sizing: border-box;
         text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center; 
     }
     nav a:hover {
         background: #810606;
