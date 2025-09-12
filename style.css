@@ -4,9 +4,6 @@ html{
 
 .container {
     background-color: rgba(236, 173, 115, 0.877);
-    border: #810606 dashed 3px;
-    border-right: 0px;
-    border-left: 0px;
     width: 900px;
     margin: 0 auto; 
     box-sizing: border-box;
@@ -81,9 +78,6 @@ body{
 
     .container {
         background-color: rgba(236, 173, 115, 0.877);
-        border: #810606 dashed 3px;
-        border-right: 0px;
-        border-left: 0px;
         width: 600px;
         margin: 0 auto; 
         box-sizing: border-box;
