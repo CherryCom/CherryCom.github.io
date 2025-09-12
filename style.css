@@ -45,7 +45,9 @@ nav ul {
 nav li {
     margin: 0;
     flex: 1;      
-    text-align: center;  
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
     height: 20px;
     border: #7f1f1f dotted 2px;
     box-sizing: border-box;
@@ -119,6 +121,8 @@ body{
     nav li {
         margin: 0;
         flex: 1;      
+        align-items: center;
+        justify-content: center;
         text-align: center;  
         height: 50px;
         border: #7f1f1f dotted 2px;
