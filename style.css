@@ -7,14 +7,40 @@ header{
     color: brown;
     font-size: 26px;
 
-    border: 5px;
+    border: 5px dashed;
     border-color: rgb(102, 8, 8);
+    box-sizing: border-box;
 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
+nav ul {
+    display: flex;
+    height: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #ca5217;
+}
+nav li {
+    margin: 0;
+    flex: 1;      
+    text-align: center;  
+    border: #7f1f1f dotted 2px;
+    box-sizing: border-box;
+}
+nav a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+}
+nav a:hover {
+    background: #810606;
+    color: wheat;
+}
+
 
 body{
     font-family: 'Times New Roman', Times, serif;
