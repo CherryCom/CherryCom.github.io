@@ -2,6 +2,9 @@ html{
     background-color: blanchedalmond;    
 }
 
+h2{
+    text-align: center;
+}
 
 .container {
     background-color: rgba(236, 173, 115, 0.877);
@@ -68,11 +71,11 @@ nav a:hover {
 
 
 .tab-content {
-  display: none;   /* hide all sections by default */
+  display: none;
 }
 
 .tab-content.active {
-  display: block;  /* show only the active one */
+  display: block;  
 }
 
 .tab-link.active {
