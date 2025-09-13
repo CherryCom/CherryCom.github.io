@@ -2,9 +2,6 @@ html{
     background-color: blanchedalmond;    
 }
 
-.h2{
-    justify-content: center;
-}
 
 .container {
     background-color: rgba(236, 173, 115, 0.877);
@@ -93,7 +90,7 @@ body{
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
 
     html{
     background-color: blanchedalmond;    
