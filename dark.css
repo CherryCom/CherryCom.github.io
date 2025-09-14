@@ -157,8 +157,37 @@ button:hover {
     bottom: 65px;     
     right: 20px; 
 }
+.projectContent {
+    background-color: rgba(48, 48, 48, 0.95);
+    border: 3px dashed rgba(255, 182, 193, 1);
+    border-radius: 16px;
+    padding: 16px 20px;
+    margin: 16px 20px;
+    box-shadow: 0 4px 8px rgba(255, 182, 193, 0.12);
+    color: rgba(245, 245, 245, 1);
+    line-height: 1.6;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
 
+.projectContent:hover {
+    box-shadow: 0 6px 12px rgba(255, 182, 193, 0.2);
+    transform: translateY(-1px);
+}
 
+.projectContent p {
+    margin: 0 0 10px 0;
+    color: rgba(245, 245, 245, 1);
+    line-height: 1.6;
+}
+
+.projectContent p:first-child {
+    font-weight: 700;
+    color: rgba(255, 182, 193, 1);
+    background-color: rgba(255, 182, 193, 0.18);
+    padding: 6px 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
 
 @media (max-width: 1000px) {
     .container {
