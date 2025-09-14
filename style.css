@@ -208,6 +208,18 @@ button:hover {
     font-size: 1.1rem;
     color: #4a1a1a;
 }
+.resume-btn {
+    background-color: rgba(236, 173, 115, 0.95);
+    border: 2px solid #810606;
+    color: #ffffff;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.resume-btn:hover {
+    background-color: #810606;
+    color: #ffe6e6;
+}
 
 @media (max-width: 1000px) {
 
