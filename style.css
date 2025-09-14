@@ -136,7 +136,7 @@ button:hover {
 }
 .scrolltoTop{
     position: fixed;
-    bottom: 55px;     
+    bottom: 65px;     
     right: 20px; 
 }
 @media (max-width: 1000px) {
