@@ -12,3 +12,13 @@ document.querySelectorAll(".tab-link").forEach(link => {
     document.getElementById(targetId).classList.add("active");
   });
 });
+
+
+function toggleTheme() {
+  document.body.classList.toggle("dark-mode");
+}
+
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
