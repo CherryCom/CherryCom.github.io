@@ -8,6 +8,7 @@ h2{
     text-align: center;
 }
 
+
 .container {
     background-color: rgba(236, 173, 115, 0.877);
     width: 900px;
@@ -96,6 +97,14 @@ body{
   display: flex;
   align-items: flex-start; /* keeps image top-aligned with text */
   gap: 15px;
+}
+.profile-pic {
+  float: left;              
+  margin: 0 15px 10px 0;   
+  width: 150px;             
+  height: 150px;           
+  object-fit: cover;        
+  border-radius: 50%;       
 }
 
 @media (max-width: 1000px) {
