@@ -115,10 +115,7 @@ body{
     margin: 0 50px 0 50px;
     text-indent: 2em;
 }
-button {
-    position: fixed;
-    bottom: 20px;      /* distance from bottom */
-    left: 20px;        /* distance from left */
+button {     
     background-color: rgba(236, 173, 115, 0.95); /* warm orange */
     border: 2px solid #810606;
     color: #fff;
@@ -133,7 +130,14 @@ button:hover {
   color: #ffe6e6;
 }
 .theme-toggle {
-  float: right;          
+    position: fixed;
+    bottom: 20px;     
+    right: 20px;        
+}
+.scrolltoTop{
+    position: fixed;
+    bottom: 55px;     
+    right: 20px; 
 }
 @media (max-width: 1000px) {
 

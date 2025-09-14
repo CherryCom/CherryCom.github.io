@@ -132,10 +132,7 @@ body {
     text-indent: 2em;
 }
 
-button {
-    position: fixed;
-    bottom: 20px;      
-    left: 20px;       
+button {    
     background-color: rgba(60, 60, 60, 0.9); 
     border:  2px solid #ffb6c1;
     color: #ffb6c1;
@@ -151,7 +148,14 @@ button:hover {
     color: #ffe6e6;
 }
 .theme-toggle {
-    float: right;          
+    position: fixed;
+    bottom: 20px;     
+    right: 20px;        
+}
+.scrolltoTop{
+    position: fixed;
+    bottom: 55px;     
+    right: 20px; 
 }
 
 
