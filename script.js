@@ -38,7 +38,6 @@ function filterProjects() {
     const projects = document.querySelectorAll(".projectContent");
 
     projects.forEach(project => {
-        // get the first <p> inside each projectContent = project title
         const title = project.querySelector("p").textContent.toLowerCase();
 
         if (title.includes(filter)) {
@@ -49,22 +48,31 @@ function filterProjects() {
     });
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const headings = document.querySelectorAll("h2");
+function typeWriterEffect(element, speed = 130) {
+    const text = element.getAttribute("data-text") || element.textContent;
+    element.setAttribute("data-text", text); 
+    element.textContent = ""; 
 
-    headings.forEach(h2 => {
-        const text = h2.textContent;
-        h2.textContent = ""; 
-        let i = 0;
-
-        function typeWriter() {
-            if (i < text.length) {
-                h2.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 80); 
-            }
+    let i = 0;
+    function type() {
+        if (i < text.length) {
+            element.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, speed);
         }
+    }
+    type();
+}
 
-        typeWriter();
+document.addEventListener("DOMContentLoaded", () => {
+    const activeHeading = document.querySelector(".tab-content.active h2");
+    if (activeHeading) typeWriterEffect(activeHeading);
+});
+
+document.querySelectorAll(".tab-link").forEach(link => {
+    link.addEventListener("click", function() {
+        const targetId = this.getAttribute("href").substring(1);
+        const targetHeading = document.querySelector(`#${targetId} h2`);
+        if (targetHeading) typeWriterEffect(targetHeading);
     });
 });
