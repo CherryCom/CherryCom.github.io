@@ -232,6 +232,10 @@ button:hover {
     transition: all 0.3s ease;
     margin: 10px 0 20px 0;
 }
+#projectSearch:focus {
+    border-color: #d2691e;
+    box-shadow: 0 0 6px rgba(210, 105, 30, 0.4);
+}
 
 @media (max-width: 1000px) {
 
