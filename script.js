@@ -26,3 +26,7 @@ function toggleTheme() {
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
+
+function downloadResume() {
+  window.open("resume.pdf", "_blank");
+}
