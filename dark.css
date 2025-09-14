@@ -146,6 +146,10 @@ button:hover {
   background-color: #810606;
   color: #ffe6e6;
 }
+.theme-toggle {
+  float: right;          
+}
+
 
 
 @media (max-width: 1000px) {
