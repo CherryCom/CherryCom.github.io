@@ -134,8 +134,8 @@ body {
 
 button {
     position: fixed;
-    bottom: 20px;      /* distance from bottom */
-    left: 20px;        /* distance from left */
+    bottom: 20px;      
+    left: 20px;       
     background-color: rgba(60, 60, 60, 0.9); 
     border:  2px solid #ffb6c1;
     color: #ffb6c1;
