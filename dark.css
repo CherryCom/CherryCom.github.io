@@ -132,6 +132,21 @@ body {
     text-indent: 2em;
 }
 
+button {
+  background-color: rgba(60, 60, 60, 0.9); 
+  border:  2px solid #ffb6c1;
+  color: #ffb6c1;
+  padding: 10px 20px;
+  border-radius: 25px; 
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: #810606;
+  color: #ffe6e6;
+}
+
 
 @media (max-width: 1000px) {
     .container {

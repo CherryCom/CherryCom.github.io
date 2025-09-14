@@ -115,6 +115,20 @@ body{
     margin: 0 50px 0 50px;
     text-indent: 2em;
 }
+button {
+  background-color: rgba(236, 173, 115, 0.95); /* warm orange */
+  border: 2px solid #810606;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px; /* makes it pill-shaped */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  background-color: #810606;
+  color: #ffe6e6;
+}
 
 @media (max-width: 1000px) {
 
