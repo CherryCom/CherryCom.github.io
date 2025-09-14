@@ -9,6 +9,7 @@ h2{
     padding: 8px 20px;
     border-radius: 20px; 
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    text-align: center;
 }
 .container {
     background-color: rgba(236, 173, 115, 0.877);
@@ -95,8 +96,8 @@ body{
 .profile-pic {
   float: left;              
   margin: 0 30px 10px 30px;   
-  width: 200px;             
-  height: 200px;           
+  width: 250px;             
+  height: 250px;           
   object-fit: cover;        
   border-radius: 20%;       
   border: 5px double #ffa07a; 
