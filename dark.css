@@ -133,21 +133,25 @@ body {
 }
 
 button {
-  background-color: rgba(60, 60, 60, 0.9); 
-  border:  2px solid #ffb6c1;
-  color: #ffb6c1;
-  padding: 10px 20px;
-  border-radius: 25px; 
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
+    position: fixed;
+    bottom: 20px;      /* distance from bottom */
+    left: 20px;        /* distance from left */
+    background-color: rgba(60, 60, 60, 0.9); 
+    border:  2px solid #ffb6c1;
+    color: #ffb6c1;
+    padding: 10px 20px;
+    border-radius: 25px; 
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    float: right
 }
 button:hover {
-  background-color: #810606;
-  color: #ffe6e6;
+    background-color: #810606;
+    color: #ffe6e6;
 }
 .theme-toggle {
-  float: right;          
+    float: right;          
 }
 
 
