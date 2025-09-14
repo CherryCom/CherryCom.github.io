@@ -39,40 +39,30 @@ function filterProjects() {
 
     projects.forEach(project => {
         const title = project.querySelector("p").textContent.toLowerCase();
-
-        if (title.includes(filter)) {
-            project.style.display = "";
-        } else {
-            project.style.display = "none";
-        }
+        project.style.display = title.includes(filter) ? "" : "none";
     });
 }
 
-function typeWriterEffect(element, speed = 130) {
-    const text = element.getAttribute("data-text") || element.textContent;
-    element.setAttribute("data-text", text); 
-    element.textContent = ""; 
-
-    let i = 0;
-    function type() {
-        if (i < text.length) {
-            element.textContent += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        }
-    }
-    type();
-}
-
 document.addEventListener("DOMContentLoaded", () => {
-    const activeHeading = document.querySelector(".tab-content.active h2");
-    if (activeHeading) typeWriterEffect(activeHeading);
+    document.querySelectorAll(".tab-content.active h2").forEach(h2 => {
+        runTypewriterEffect(h2);
+    });
 });
 
 document.querySelectorAll(".tab-link").forEach(link => {
-    link.addEventListener("click", function() {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        document.querySelectorAll(".tab-link").forEach(l => l.classList.remove("active"));
+        document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+
+        this.classList.add("active");
         const targetId = this.getAttribute("href").substring(1);
-        const targetHeading = document.querySelector(`#${targetId} h2`);
-        if (targetHeading) typeWriterEffect(targetHeading);
+        const targetContent = document.getElementById(targetId);
+        targetContent.classList.add("active");
+
+        targetContent.querySelectorAll("h2").forEach(h2 => {
+            runTypewriterEffect(h2);
+        });
     });
 });
