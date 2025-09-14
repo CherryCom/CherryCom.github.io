@@ -15,9 +15,13 @@ document.querySelectorAll(".tab-link").forEach(link => {
 
 
 function toggleTheme() {
-  document.body.classList.toggle("dark-mode");
+  const theme = document.getElementById("theme-style");
+  if (theme.getAttribute("href") === "light.css") {
+    theme.setAttribute("href", "dark.css");
+  } else {
+    theme.setAttribute("href", "style.css");
+  }
 }
-
 
 function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" });
