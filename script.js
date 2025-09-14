@@ -32,14 +32,17 @@ function downloadResume() {
   document.body.removeChild(link);
 }
 
-function filterProjects() {
-    const input = document.getElementById("projectSearch");
+function filterProjects(inputId = "projectSearch") {
+    const input = document.getElementById(inputId);
+    if (!input) return;
+
     const filter = input.value.toLowerCase();
-    const projects = document.querySelectorAll(".projectContent");
+    const tab = input.closest(".tab-content");
+    const projects = tab.querySelectorAll(".projectContent");
 
     projects.forEach(project => {
-        const title = project.querySelector("p").textContent.toLowerCase();
-        project.style.display = title.includes(filter) ? "" : "none";
+        const text = project.textContent.toLowerCase();
+        project.style.display = text.includes(filter) ? "" : "none";
     });
 }
 
