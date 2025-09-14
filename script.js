@@ -48,3 +48,23 @@ function filterProjects() {
         }
     });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    const headings = document.querySelectorAll("h2");
+
+    headings.forEach(h2 => {
+        const text = h2.textContent;
+        h2.textContent = ""; 
+        let i = 0;
+
+        function typeWriter() {
+            if (i < text.length) {
+                h2.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 80); 
+            }
+        }
+
+        typeWriter();
+    });
+});
