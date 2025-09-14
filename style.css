@@ -72,6 +72,9 @@ nav a:hover {
     background: #810606;
     color: wheat;
 }
+.bottomBar{
+    padding: 10px 0;
+}
 .tab-content {
   display: none;
 }
