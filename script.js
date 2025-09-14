@@ -16,7 +16,7 @@ document.querySelectorAll(".tab-link").forEach(link => {
 
 function toggleTheme() {
   const theme = document.getElementById("theme-style");
-  if (theme.getAttribute("href") === "light.css") {
+  if (theme.getAttribute("href") === "style.css") {
     theme.setAttribute("href", "dark.css");
   } else {
     theme.setAttribute("href", "style.css");
