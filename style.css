@@ -1,14 +1,11 @@
 html{
     background-color: blanchedalmond;    
 }
-
 h2{
     font-family: 'Pacifico', cursive;
     font-size: 26px;
     text-align: center;
 }
-
-
 .container {
     background-color: rgba(236, 173, 115, 0.877);
     width: 900px;
@@ -22,8 +19,6 @@ h2{
     margin: 0 auto; 
     box-sizing: border-box;
 }
-
-
 header{
     margin: 0;
     height: 200px;
@@ -71,21 +66,16 @@ nav a:hover {
     background: #810606;
     color: wheat;
 }
-
-
 .tab-content {
   display: none;
 }
-
 .tab-content.active {
   display: block;  
 }
-
 .tab-link.active {
   background: #810606;
   color: wheat;
 }
-
 body{
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
@@ -100,11 +90,13 @@ body{
 }
 .profile-pic {
   float: left;              
-  margin: 0 15px 10px 0;   
-  width: 150px;             
-  height: 150px;           
+  margin: 0 30px 10px 30px;   
+  width: 200px;             
+  height: 200px;           
   object-fit: cover;        
-  border-radius: 50%;       
+  border-radius: 20%;       
+  border: 5px double #ffa07a; 
+  padding: 6px
 }
 
 @media (max-width: 1000px) {
