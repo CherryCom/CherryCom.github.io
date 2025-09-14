@@ -31,3 +31,20 @@ function downloadResume() {
   link.click();
   document.body.removeChild(link);
 }
+
+function filterProjects() {
+    const input = document.getElementById("projectSearch");
+    const filter = input.value.toLowerCase();
+    const projects = document.querySelectorAll(".projectContent");
+
+    projects.forEach(project => {
+        // get the first <p> inside each projectContent = project title
+        const title = project.querySelector("p").textContent.toLowerCase();
+
+        if (title.includes(filter)) {
+            project.style.display = "";
+        } else {
+            project.style.display = "none";
+        }
+    });
+}
