@@ -261,6 +261,16 @@ button:hover {
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
+#contact a {
+    color: #810606;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: #d2691e;
+    text-decoration: underline;
+}
 
 
 @media (max-width: 1000px) {
