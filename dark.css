@@ -260,4 +260,14 @@ button:hover {
     body {
         font-size: 12px;
     }
+    .profile-pic {
+        display: block;             
+        margin: 0 auto 20px auto;  
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20%;
+        border: 5px double rgba(255, 182, 193, 1);
+        padding: 6px;
+    }
 }

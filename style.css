@@ -241,7 +241,16 @@ button:hover {
         box-sizing: border-box;
         min-height: calc(100vh - 300px); 
     }
-
+    .profile-pic {
+        display: block;             
+        margin: 0 auto 20px auto;  
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 20%;
+        border: 5px double #ffa07a;
+        padding: 6px;
+        }
 
     header{
         margin: 0;
