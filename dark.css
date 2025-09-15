@@ -294,7 +294,7 @@ button:hover {
     }
     .container2 {
         width: 600px;
-        min-height: calc(100vh - 300px);
+        min-height: calc(100vh - 250px);
     }
     header {
         height: 150px;

@@ -291,7 +291,7 @@ button:hover {
         width: 600px;
         margin: 0 auto; 
         box-sizing: border-box;
-        min-height: calc(100vh - 300px); 
+        min-height: calc(100vh - 250px);
     }
     .profile-pic {
         float: none;
