@@ -297,6 +297,7 @@ button:hover {
         min-height: calc(100vh - 300px);
     }
     header {
+        height: 150px;
         font-size: 26px;
     }
     nav a {
